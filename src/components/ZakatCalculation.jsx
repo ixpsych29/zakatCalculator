@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Tooltip, Button } from '@mui/material';
+import { useState } from "react";
+import { Tooltip, Button } from "@mui/material";
 
 const ZakatCalculator = () => {
   const [formData, setFormData] = useState({
@@ -68,16 +68,17 @@ const ZakatCalculator = () => {
     <div className="flex justify-between">
       <div className="col-span-2">
         <Tooltip
-          title={showFormula ? `Payable Zakat = Total Net Worth × 2.5%` : ''}
+          title={showFormula ? `Payable Zakat = Total Net Worth × 2.5%` : ""}
         >
           <Button
             variant="outlined"
             onClick={toggleFormula}
             sx={{
-              color: '#67e8f9',
-              '&:hover': {
-                backgroundColor: '#67e8f9',
-                color: 'black',
+              color: "#060505",
+              backgroundColor: "#ffffff",
+              "&:hover": {
+                backgroundColor: "#ffffff",
+                color: "black",
               },
             }}
           >
@@ -85,7 +86,7 @@ const ZakatCalculator = () => {
           </Button>
         </Tooltip>
       </div>
-      <div className="flex justify-center bg-cyan-300">
+      <div className="flex justify-center bg-gray-100 w-full">
         <div className="container mx-auto p-4">
           <h1 className="text-2xl font-bold mb-4">Zakat Calculator</h1>
           <div className="grid grid-cols-2 gap-4">
